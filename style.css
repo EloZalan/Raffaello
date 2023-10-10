@@ -139,9 +139,53 @@ div.menu{
     width: 48%;
     border: 1px solid black;
     margin-left: 1.75% ;
-    min-height: 100px;  /*kc majd mehet rá vagy felet csak vizualizálni kellet */
+    height: 550px;
+    background-color: rgba(0, 7, 102, 0.671);
+}
+img.mealimg{
+    width: 90%;
+    transition: all 1s ease-in-out;
+    
+}
+img.mealimg:hover{
+    transition: scale(1.5);
+    width: 95%;    
+}
+div p.meal{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    transition: all 0.75s ease-in-out;
 
 }
+div p.meal:hover{
+    padding-top: 0px;
+    transition: scale(1.5);
+}
+div.menutxt {
+    text-align: center;
+}
+div.menutxt h1{
+    margin: 0;
+    color: red;
+}
+div.menutxt h1:hover{
+    transition: all 2s;
+    transform: rotateY(360deg);
+}
+div.menutxt p{
+    color: white;
+    transition: all 1s ease-in-out ;
+    padding: 0 22px;
+}
+div.menutxt p:hover{
+    transition: scale(1.5);
+    font-size: large;
+    padding: 0px;
+    
+}
+
 
 
 
