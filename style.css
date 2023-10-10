@@ -50,6 +50,10 @@ hr.goodby{
     margin: 0;
     margin-top: 20px;
 }
+hr.egyeni{
+    border: 2px solid rgb(177, 0, 0) ;
+    margin: 0;
+}
 div.c2pack{
     border:  2px solid black;
     border-radius: 15px;
@@ -84,21 +88,34 @@ div.pack1{
 /* ticket */
 
 div.ticket{
+    background-color: rgba(0, 7, 102, 0.671);
     width: 48%;
     border: 1px solid black;
-    margin-right:1.75% ;
+    margin-left:2px ;
+    border-radius: 15px;
+    margin-right:1.5% ;
+    transition: all 1s ease-in-out;
+}
+div.ticket:hover{
+    transition: scale(1.5);
+    width: 49%;
+    margin-left: 0.1px;
+    margin-right: 1px;
+    
 }
 div.insideticket{
     display: flex;
     flex-wrap: wrap;
 }
 div.ticketpic {
+    
     width: 60%;
 }
 div.ticketpic img {
     width: 100%;
 }
 div.qrcode{
+    margin-top: 5px ;
     width: 30%;
 }
 div.qrcode p{
@@ -109,7 +126,7 @@ div.qrcode img{
     width: 100%;
 }
 p.qrcodedescribe{
-    font-size: 10px;
+    font-size: 9px;
 }
 div.ticketinfo{
     width: 100%;
@@ -138,13 +155,22 @@ li.smallletter ul{
 div.menu{
     width: 48%;
     border: 1px solid black;
-    margin-left: 1.75% ;
-    height: 550px;
+    border-radius: 15px;
+    margin-left: 1.5% ;
+    height: 560px;
     background-color: rgba(0, 7, 102, 0.671);
+    transition: all 0.5s ease-in-out;
+}
+div.menu:hover{
+    transition: scale(1.5);
+    width: 49.5%;
+    margin-left: 1px;
+    
 }
 img.mealimg{
     width: 90%;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.1s ;
     
 }
 img.mealimg:hover{
@@ -156,7 +182,9 @@ div p.meal{
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    transition: all 0.75s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.1s ;
+
 
 }
 div p.meal:hover{
@@ -176,7 +204,8 @@ div.menutxt h1:hover{
 }
 div.menutxt p{
     color: white;
-    transition: all 1s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
+    transition-delay: 0.1s ;
     padding: 0 22px;
 }
 div.menutxt p:hover{
@@ -184,6 +213,23 @@ div.menutxt p:hover{
     font-size: large;
     padding: 0px;
     
+}
+
+
+
+
+div.reklam{
+    margin: 20px 3px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 330px;
+    background-color: rgba(0, 7, 102, 0.671);
+    transition: all 0.75s;
+
+}
+div.reklam:hover{
+    margin: 17px 0px;
+    height: 333px;
 }
 
 
@@ -209,6 +255,57 @@ a{
 div h3{
     vertical-align: middle;
     padding-top: 4px ;
+}
+div.reklamblokk{
+    text-align: center;
+}
+a.a_buy{
+    color: rgb(177, 0, 0);
+    
+}
+
+
+
+
+ul.ticketul{
+    font-size: larger;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    
+}
+li.ticketli{
+    text-align: center;
+    font-size: large;
+    float: left;
+    transition: all 0.5s;
+    
+}
+li.tu1:hover{
+    transition: scale(1.5);
+    background-color: rgba(0, 7, 102, 0.671);
+    font-size: larger;
+
+}
+li.tu2:hover{
+    transition: scale(1.5);
+    background-color: rgba(0, 7, 102, 0.671);
+    font-size: larger;
+
+}
+li.tu3:hover{
+    transition: scale(1.5);
+    background-color: rgba(0, 7, 102, 0.671);
+    font-size: larger;
+
+}
+a.a_buyit{
+    color: white;
+    transition: all 0.4s;
+}
+a.a_buyit:hover{
+    transition: scale(1.5);
+    color: rgb(177, 0, 0);
 }
 
 
@@ -388,7 +485,7 @@ img{
     transform: 2s;
 }
 .dropdown {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
   }
 
@@ -407,5 +504,53 @@ div.dropdown-content:hover{
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.modal-content {
+    background-color: rgb(38, 44, 131);
+    margin: 10px auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.modal-content img{
+    width: 50%;
+}
+.modal-content p{
+    width: 50%;
+    text-align: center;
+    margin: 15px auto;
+    color: white;
+}
+.modal-content h1{
+    margin: 15px auto;
+    margin-bottom: 15px;
+    color: white;
 }
