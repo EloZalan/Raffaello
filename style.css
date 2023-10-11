@@ -306,6 +306,8 @@ a.a_buyit{
 a.a_buyit:hover{
     transition: scale(1.5);
     color: rgb(177, 0, 0);
+    font-weight: bolder;
+
 }
 
 
