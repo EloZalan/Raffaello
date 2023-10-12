@@ -152,6 +152,7 @@ li.smallletter ul{
 
 
 
+
 div.menu{
     width: 48%;
     border: 1px solid black;
@@ -479,6 +480,20 @@ div#a6:hover {
     transition: 0.5s;
     transition-delay: 0.1s ;
 }
+div#a66 {
+    margin: 4px;
+    background-color: rgba(255, 94, 0, 0.63);
+    border-radius: 15px;
+}
+div#a66:hover {
+    background-color: red;
+    border-radius: 15px;
+    padding-top: 3px;
+    width: 13%;
+    height: 40px;
+    transition: 0.5s;
+    transition-delay: 0.1s ;
+}
 
 
 
@@ -486,39 +501,6 @@ img{
     width: 100%;
     transform: 2s;
 }
-.dropdown {
-    /* position: relative; */
-    display: inline-block;
-  }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    transform: 1s;
-    background-color: #f9f9f9;
-    width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-div.dropdown-content:hover{
-    transform: 2s;
-}
-
-.dropdown:hover .dropdown-content {
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 .modal {
